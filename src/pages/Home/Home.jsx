@@ -7,7 +7,7 @@ function Home() {
         
         <div className="col-md-3 text-center mb-3 mb-md-0">
           <img
-            src="./me.jpg"
+            src="./assets/me.jpg"
             alt="student"
             className=" img-fluid border "
           />
