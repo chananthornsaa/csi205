@@ -1,6 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import './Animation.css';
 
+import basketImg from '../../assets/Animation/basket.jpg';
+import footballImg from '../../assets/Animation/football.png';
+import volleyImg from '../../assets/Animation/volley.png';
+import meImg from '../../assets/Animation/me.jpg';
+import cartoonImg from '../../assets/Animation/cartoon.jpg';
+
 function Animation() {
   const fieldWidth = 750;
   const fieldHeight = 400;
@@ -87,11 +93,11 @@ function Animation() {
 
   const getBackgroundImage = () => {
     switch(selectedObject) {
-      case 1: return 'url(./image/basket.jpg)';
-      case 2: return 'url(./image/football.png)';
-      case 3: return 'url(./image/volley.png)';
-      case 4: return 'url(./image/me.jpg)';
-      case 5: return 'url(./image/cartoon.jpg)';
+      case 1: return `url(${basketImg})`;
+      case 2: return `url(${footballImg})`;
+      case 3: return `url(${volleyImg})`;
+      case 4: return `url(${meImg})`;
+      case 5: return `url(${cartoonImg})`;
       default: return '';
     }
   };

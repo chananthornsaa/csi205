@@ -1,5 +1,6 @@
-
 import './Home.css'
+import meImg from '../../assets/Home/me.jpg'
+
 function Home() {
     return (
         <div className='home-container container mt-5'>
@@ -7,7 +8,7 @@ function Home() {
         
         <div className="col-md-3 text-center mb-3 mb-md-0">
           <img
-            src="./assets/me.jpg"
+            src={meImg}
             alt="student"
             className=" img-fluid border "
           />
